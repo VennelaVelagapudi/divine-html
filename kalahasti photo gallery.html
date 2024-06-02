@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #5f5a5a;
+    }
+
+    header {
+            background-color: #5f5a5a;
+            color: white;
+            padding: 20px 0 10px; /* Decreased bottom padding of the header */
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 25px; /* Decreased font size */
+            width: 100%; /* Set header width to 100% */
+        }
+
+    footer {
+            background-color: #5f5a5a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid white;
+            font-size: 18px; /* Decreased font size */
+        }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .photo {
+        margin: 10px;
+        flex: 0 1 calc(33.33% - 20px); /* Adjusted to show 3 photos in each row */
+        max-width: calc(33.33% - 20px); /* Adjusted to show 3 photos in each row */
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Add this CSS to center align the text in header and footer */
+    .header h1 {
+        margin: 0; /* To remove default margin */
+    }
+
+    .footer p {
+        margin: 0; /* To remove default margin */
+    }
+</style>
+</head>
+<body>
+
+<header class="header">
+    <h1>Photo Gallery</h1>
+</header>
+
+<div class="container">
+    <!-- Replace the 'src' attributes with the actual addresses of your photos -->
+    <div class="photo">
+        <img src="https://www.holidify.com/images/cmsuploads/compressed/225(1)_20180206113353.jpg" alt="Photo 1">
+    </div>
+    <div class="photo">
+        <img src="https://th-i.thgim.com/public/migration_catalog/article16220374.ece/alternates/FREE_1200/04FRKALAHASTI1" alt="Photo 2">
+    </div>
+    <div class="photo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZ0n4xEnOYBNWI8zAd0jZVOjr1_PhLAh6dB0WXaeayA&s" alt="Photo 3">
+    </div>
+    <div class="photo">
+        <img src="https://assets.thehansindia.com/h-upload/2022/05/29/1295019-devotees.webp" alt="Photo 4">
+    </div>
+    <div class="photo">
+        <img src="https://lh6.googleusercontent.com/proxy/cDgWcO98exJFQXCOQamdoWGGgElJsw2Dwomczj8WyQ6EC4VX23xwuiH0E78F5OyS78DcHoz5SgkOW9ZnP6cjd2nA5_h1xVgxofCbkwOmfJ9qDyZ8YlYNjsVt3gI5VxlnjwzJj0m24w" alt="Photo 5">
+    </div>
+    <div class="photo">
+        <img src="https://gotirupathi.files.wordpress.com/2015/05/sri-kalahasti-temple-sevas.jpg" alt="Photo 6">
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-line"></div>
+    <p>Copyright © 2024 Divine Discoveries - All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karnataka</title>
+<style>
+    :root {
+        --hover-box-color: rgba(211, 211, 211, 0.897); /* Default light grey color */
+        --hover-text-color: rgb(87, 87, 87); /* Default text color */
+        --hover-text-size: 20px; /* Default font size for hovered text */
+    }
+
+    body {
+        background-color: #5f5a5a;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: #5f5a5a;
+        color: white;
+        padding: 0px 0;
+        text-align: center;
+        margin-bottom: 0; /* Decreased space below header */
+        font-size: 24px; /* Increased font size */
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Align boxes with equal space around */
+        padding: 0 10px; /* Add padding to container */
+        margin-top: -10px; /* Adjusted margin-top to move boxes up */
+    }
+    .box {
+        position: relative;
+        width: calc(22% - 10px); /* Adjust width for 4 boxes in each row and reduce space */
+        max-width: calc(22% - 10px); /* Adjust max-width for responsiveness */
+        height: 200px;
+        background-color: #5f5a5a;
+        margin-bottom: 20px; /* Reduce space between boxes */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden; /* Ensure the images don't overflow */
+    }
+    .box img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+    }
+    .box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--hover-box-color); /* Use custom hover box color */
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none; /* So that hover doesn't interfere with links */
+    }
+    .box:hover::before {
+        opacity: 1;
+    }
+    .box-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--hover-text-color); /* Use custom text color */
+        font-size: var(--hover-text-size); /* Use custom font size */
+        font-weight: bold; /* Make the text bold */
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .box:hover .box-text {
+        opacity: 1;
+    }
+    footer {
+        background-color: #5f5a5a;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Karnataka</h1>
+</header>
+
+<div id="container">
+    <div class="box">
+        <a href="../temples info/karnataka/ISCKON/ISCKON home page.html">
+            <img src="../temple pics/Karnataka/isckon(karnataka).jpg" alt="Image 1">
+            <div class="box-text">ISCKON</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/karnataka/Gokarna/gokarna home page.html">
+            <img src="../temple pics/Karnataka/gokarna.jpg" alt="Image 2">
+            <div class="box-text">Gokarna</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/karnataka/Hampi/hampi home page.html">
+            <img src="../temple pics/Karnataka/hampi.webp" alt="Image 3">
+            <div class="box-text">Hampi</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/karnataka/Belur/belur home page.html">
+            <img src="../temple pics/Karnataka/belur(karnataka).jpg" alt="Image 4">
+            <div class="box-text">Belur</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/karnataka/Sringeri/sringeri home page.html">
+            <img src="../temple pics/Karnataka/Sringeri.jpg" alt="Image 5">
+            <div class="box-text">Sringeri</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/karnataka/Kotilingeswara/kotilingeswara home page.html">
+            <img src="../temple pics/Karnataka/kotilingeshwara(karnataka).jpg" alt="Image 6">
+            <div class="box-text">Kotilingeshwara</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/karnataka/Kukke Subramanyam/Kukke Subramanyam home page.html">
+            <img src="../temple pics/Karnataka/Kukke Subramanya Temple(karnataka).jpg" alt="Image 7">
+            <div class="box-text">Kukke Subramanyam</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/karnataka/Dharmeswaram/Dharmeswaram home page.html">
+            <img src="../temple pics/Karnataka/Dharmeswara(karnataka).jpg" alt="Image 8">
+            <div class="box-text">Dharmeswaram</div>
+        </a>
+    </div>
+</div>
+
+<footer>
+  Copyright © 2024 Divine Discoveries - All Rights Reserved.
+</footer>
+
+<script>
+    // JavaScript to change the font size of hovered text
+    document.documentElement.style.setProperty('--hover-text-size', '35px'); // Default font size
+
+    function changeTextSize(size) {
+        document.documentElement.style.setProperty('--hover-text-size', size + 'px');
+    }
+</script>
+
+</body>
+</html>
