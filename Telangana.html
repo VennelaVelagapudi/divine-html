@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telangana</title>
+<style>
+    :root {
+        --hover-box-color: rgba(211, 211, 211, 0.897); /* Default light grey color */
+        --hover-text-color: rgb(87, 87, 87); /* Default text color */
+        --hover-text-size: 20px; /* Default font size for hovered text */
+    }
+
+    body {
+        background-color: #5f5a5a;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: #5f5a5a;
+        color: white;
+        padding: 0px 0;
+        text-align: center;
+        margin-bottom: 0; /* Decreased space below header */
+        font-size: 24px; /* Increased font size */
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Align boxes with equal space around */
+        padding: 0 10px; /* Add padding to container */
+        margin-top: -10px; /* Adjusted margin-top to move boxes up */
+    }
+    .box {
+        position: relative;
+        width: calc(22% - 10px); /* Adjust width for 4 boxes in each row and reduce space */
+        max-width: calc(22% - 10px); /* Adjust max-width for responsiveness */
+        height: 200px;
+        background-color: #5f5a5a;
+        margin-bottom: 20px; /* Reduce space between boxes */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden; /* Ensure the images don't overflow */
+    }
+    .box img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+    }
+    .box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--hover-box-color); /* Use custom hover box color */
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none; /* So that hover doesn't interfere with links */
+    }
+    .box:hover::before {
+        opacity: 1;
+    }
+    .box-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--hover-text-color); /* Use custom text color */
+        font-size: var(--hover-text-size); /* Use custom font size */
+        font-weight: bold; /* Make the text bold */
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .box:hover .box-text {
+        opacity: 1;
+    }
+    footer {
+        background-color: #5f5a5a;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Telangana</h1>
+</header>
+
+<div id="container">
+    <div class="box">
+        <a href="../temples info/telangana/Badhrachalam/Badhrachalam home page.html">
+            <img src="../temple pics/Telangana/badhrachalam.jpeg" alt="Image 1">
+            <div class="box-text">Bhadrachalam</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/telangana/Basara/Basara home page.html">
+            <img src="../temple pics/Telangana/basara.jpg" alt="Image 2">
+            <div class="box-text">Basara</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/telangana/Yadadri/Yadadri home page.html">
+            <img src="../temple pics/Telangana/yadadri.jpg" alt="Image 3">
+            <div class="box-text">Yadadri</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/telangana/1000 pillars(Hanamkonda)/1000 pillars(hanamkonda) home page.html">
+            <img src="../temple pics/Telangana/hanamkonda(1000 pillars).avif" alt="Image 4">
+            <div class="box-text">Hanamkonda</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/telangana/Badrakali temple/Badrakali temple home page.html">
+            <img src="../temple pics/Telangana/badrakali temple.jpg" alt="Image 5">
+            <div class="box-text">Badrakali</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/telangana/Padmakshi/Padmakshi home page.html">
+            <img src="../temple pics/Telangana/padmakshi(telangana).jpeg" alt="Image 6">
+            <div class="box-text">Padmakshi</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/telangana/Somasila/Somasila home page.html">
+            <img src="../temple pics/Telangana/someswar(somasila).jpg" alt="Image 7">
+            <div class="box-text">Somasila</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/telangana/Birla Mandir/Birla Mandir home page.html">
+            <img src="../temple pics/Telangana/Birla Mandir.webp" alt="Image 8">
+            <div class="box-text">Birla Mandir</div>
+        </a>
+    </div>
+</div>
+
+<footer>
+  Copyright © 2024 Divine Discoveries - All Rights Reserved.
+</footer>
+
+<script>
+    // JavaScript to change the font size of hovered text
+    document.documentElement.style.setProperty('--hover-text-size', '35px'); // Default font size
+
+    function changeTextSize(size) {
+        document.documentElement.style.setProperty('--hover-text-size', size + 'px');
+    }
+</script>
+
+</body>
+</html>
