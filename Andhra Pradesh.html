@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andhra Pradesh</title>
+<style>
+    :root {
+        --hover-box-color: rgba(145, 137, 137, 0.575); /* Default light grey color */
+        --hover-text-color: rgb(54, 54, 54); /* Default text color */
+        --hover-text-size: 20px; /* Default font size for hovered text */
+    }
+
+    body {
+        background-color: #5f5a5a;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: #5f5a5a;
+        color: white;
+        padding: 0px 0;
+        text-align: center;
+        margin-bottom: 0; /* Decreased space below header */
+        font-size: 24px; /* Increased font size */
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Align boxes with equal space around */
+        padding: 0 10px; /* Add padding to container */
+        margin-top: -10px; /* Adjusted margin-top to move boxes up */
+    }
+    .box {
+        position: relative;
+        width: calc(22% - 10px); /* Adjust width for 4 boxes in each row and reduce space */
+        max-width: calc(22% - 10px); /* Adjust max-width for responsiveness */
+        height: 200px;
+        background-color: #5f5a5a;
+        margin-bottom: 20px; /* Reduce space between boxes */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden; /* Ensure the images don't overflow */
+    }
+    .box img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+    }
+    .box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--hover-box-color); /* Use custom hover box color */
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none; /* So that hover doesn't interfere with links */
+    }
+    .box:hover::before {
+        opacity: 1;
+    }
+    .box-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--hover-text-color); /* Use custom text color */
+        font-size: var(--hover-text-size); /* Use custom font size */
+        font-weight: bold; /* Make the text bold */
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .box:hover .box-text {
+        opacity: 1;
+    }
+    footer {
+        background-color: #5f5a5a;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Andhra Pradesh</h1>
+</header>
+
+<div id="container">
+    <div class="box">
+        <a href="./tirupati home page.html">
+            <img src="./temple pics/Andhra Pradesh/tirupati.jpeg" alt="Tirupati Temple">
+            <div class="box-text">Tirupati</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="./vja kanakadurga home page.html">
+            <img src="./temple pics/Andhra Pradesh/vja kanakadurga.jpg" alt="Kanakadurga Temple">
+            <div class="box-text">Kanakadurga</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="./vontimitta home page.html">
+            <img src="./temple pics/Andhra Pradesh/vontimitta.jpg" alt="Vontimitta Temple">
+            <div class="box-text">Vontimitta</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/andhra pradesh/Kalahasti/kalahasti home page.html">
+            <img src="../temple pics/Andhra Pradesh/kalahasti.jpg" alt="Kalahasti Temple">
+            <div class="box-text">Kalahasti</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/andhra pradesh/Srisailam/srisailam home page.html">
+            <img src="../temple pics/Andhra Pradesh/srisailam.webp" alt="Srisailam Temple">
+            <div class="box-text">Srisailam</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/andhra pradesh/Annavaram/annavaram home page.html">
+            <img src="../temple pics/Andhra Pradesh/annavaram.jpg" alt="Annavaram Temple">
+            <div class="box-text">Annavaram</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/andhra pradesh/Amaravati/amaravati home page.html">
+            <img src="../temple pics/Andhra Pradesh/amaravati.jpg" alt="Amaravati Temple">
+            <div class="box-text">Amaravati</div>
+        </a>
+    </div>
+    <div class="box">
+        <a href="../temples info/andhra pradesh/Simhachalam/simhachalam home page.html">
+            <img src="../temple pics/Andhra Pradesh/simhachalam.avif" alt="Simhachalam Temple">
+            <div class="box-text">Simhachalam</div>
+        </a>
+    </div>
+</div>
+
+<footer>
+  Copyright © 2024 Divine Discoveries - All Rights Reserved.
+</footer>
+
+<script>
+    // JavaScript to change the font size of hovered text
+    document.documentElement.style.setProperty('--hover-text-size', '35px'); // Default font size
+
+    function changeTextSize(size) {
+        document.documentElement.style.setProperty('--hover-text-size', size + 'px');
+    }
+</script>
+
+</body>
+</html>
