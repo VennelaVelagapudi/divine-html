@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #5f5a5a; /* Background color of body */
+        color: #fff; /* Text color */
+    }
+
+    header, footer {
+        background-color: #5f5a5a; /* Background color of header and footer */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .photo {
+        margin: 10px;
+        flex: 0 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Photo Gallery</h1>
+</header>
+
+<div class="container">
+    <!-- Replace the 'src' attributes with the actual addresses of your photos -->
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0035.jpg" alt="Photo 1">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0036.jpg" alt="Photo 2">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0037.jpg" alt="Photo 3">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0038.jpg" alt="Photo 4">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0039.jpg" alt="Photo 5">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0040.jpg" alt="Photo 6">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
